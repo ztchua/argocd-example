@@ -5,10 +5,9 @@ metadata:
 spec:
   selector:
     app: hello-world
-  type: LoadBalancer
+  type: ClusterIP
   ports:
     - name: docker-port
       protocol: TCP
       port: 80
       targetPort: 80
-  loadBalancerIP: 192.168.0.209
